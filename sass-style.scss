@@ -4,6 +4,13 @@ $Grayish-Blue: hsl(211, 15%, 73%);
 $Light-Grayish-Blue: hsl(210, 46%, 95%);
 $medium: 500;
 $heavy: 700;
+%box-setting {
+    position: absolute;
+    z-index: 2;
+    box-shadow: 10px 10px 5px $Light-Grayish-Blue;
+    background: $Very-Dark-Grayish-Blue;
+    margin: 0;
+}
 
 body {
     background: $Light-Grayish-Blue;
@@ -74,6 +81,8 @@ body {
 }
 
 .profile {
+    position: relative;
+    z-index: 1;
     button {
         width: 30px;
         height: 30px;
@@ -83,5 +92,44 @@ body {
         left: 280px;
         bottom: 30px;
         background: $Light-Grayish-Blue;
+    }
+
+    button :hover {
+        cursor: pointer;
+    }
+
+    .shareb {
+        visibility: hidden;
+        @extend %box-setting;
+        bottom: 90px;
+        left: 220px;
+        box-sizing: border-box;
+        height: 60px;
+        width: 260px;
+        padding: 15px 30px;
+        border-radius: 10px;
+        span {
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: $Grayish-Blue;
+            margin-right: 10px;
+        }
+
+        img {
+            margin: 0 7px;
+        }
+        
+    }
+
+    .arrow {
+        @extend %box-setting;
+        visibility: hidden;
+        bottom: 75px;
+        left: 360px;
+        width: 0;
+        height: 0;
+        border-right: 10px solid white;
+        border-left: 10px solid white;
+        border-top: 15px solid $Very-Dark-Grayish-Blue;
     }
 }
