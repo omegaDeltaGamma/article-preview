@@ -1,0 +1,87 @@
+$Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+$Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+$Grayish-Blue: hsl(211, 15%, 73%);
+$Light-Grayish-Blue: hsl(210, 46%, 95%);
+$medium: 500;
+$heavy: 700;
+
+body {
+    background: $Light-Grayish-Blue;
+    padding: 150px;
+    padding-left: 250px;
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.preview {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-sizing: border-box;
+    height: 300px;
+    width: 750px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px $Grayish-Blue, -5px 5px 5px $Grayish-Blue;
+}
+
+.picture {
+    img {
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+}
+
+.comment {
+    padding: 30px;
+
+    h1 {
+        color: $Very-Dark-Grayish-Blue;
+        font-weight: $heavy;
+        font-size: 20px;
+    }
+
+    p {
+        color: $Desaturated-Dark-Blue;
+        font-weight: $medium;
+        line-height: 20px;
+    }
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.name {
+    color: $Very-Dark-Grayish-Blue;
+    font-weight: $heavy;
+    font-size: 15px;
+    position: relative;
+    bottom: 25px;
+    left: 15px;
+}
+
+.date {
+    color: $Grayish-Blue;
+    font-weight: $medium;
+    position: relative;
+    left: 65px;
+    bottom: 22px;
+}
+
+.profile {
+    button {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 0px;
+        position: relative;
+        left: 280px;
+        bottom: 30px;
+        background: $Light-Grayish-Blue;
+    }
+}

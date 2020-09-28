@@ -1,0 +1,76 @@
+body {
+  background: #ecf2f8;
+  padding: 150px;
+  padding-left: 250px;
+  font-size: 13px;
+  font-family: "Manrope", sans-serif;
+}
+
+.preview {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-sizing: border-box;
+  height: 300px;
+  width: 750px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px #b0bac4, -5px 5px 5px #b0bac4;
+}
+
+.picture img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.comment {
+  padding: 30px;
+}
+.comment h1 {
+  color: #48556a;
+  font-weight: 700;
+  font-size: 20px;
+}
+.comment p {
+  color: #6d7f97;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.name {
+  color: #48556a;
+  font-weight: 700;
+  font-size: 15px;
+  position: relative;
+  bottom: 25px;
+  left: 15px;
+}
+
+.date {
+  color: #b0bac4;
+  font-weight: 500;
+  position: relative;
+  left: 65px;
+  bottom: 22px;
+}
+
+.profile button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 0px;
+  position: relative;
+  left: 280px;
+  bottom: 30px;
+  background: #ecf2f8;
+}
+
+/*# sourceMappingURL=style.css.map */
