@@ -21,14 +21,34 @@
         <img src="./images/avatar-michelle.jpg" alt="avatar" class="avatar">
         <span class="name">Michelle Appleton</span><br>
         <span class="date">28 Jun 2020</span>
-        <button><img src="./images/icon-share.svg" alt="share"></button>
+        <span class="shareb">
+          <span>share</span>
+          <img src="./images/icon-facebook.svg" alt="facebook" class="facebook">
+          <img src="./images/icon-twitter.svg" alt="twitter" class="twitter">
+          <img src="./images/icon-pinterest.svg" alt="pinterest" class="pinterest">
+        </span>
+        <span class="arrow"></span>
+        <button class="share"><img src="./images/icon-share.svg" alt="share"></button>
       </div>  
     </div>
   </div>
 <script>
-  
+  var share = document.getElementsByClassName("share")[0];
+  var box = document.getElementsByClassName("shareb")[0];
+  var arrow = document.getElementsByClassName("arrow")[0];
 
+  function ShowBox() {
+    box.style.visibility = "visible";
+    arrow.style.visibility = "visible";
+  } 
 
+  function HideBox() {
+    box.style.visibility = "hidden";
+    arrow.style.visibility = "hidden";
+  }
+
+  share.addEventListener("click", ShowBox);
+  share.addEventListener("dblclick", HideBox);
 
 </script>
 </body>
