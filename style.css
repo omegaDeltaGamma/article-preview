@@ -139,22 +139,26 @@ body {
 
   .profile button {
     position: relative;
-    left: 20px;
-    z-index: 2;
+    left: 150px;
+    z-index: 3;
   }
 
-  .arrow {
-    border: 0px solid white;
+  .profile .arrow {
+    border: none;
   }
 
   .profile .shareb {
     box-sizing: border-box;
-    width: 1500px;
-    height: 100px;
-    padding: 0;
-    position: relative;
-    left: 70px;
-    bottom: 9px;
+    width: 430px;
+    height: 80px;
+    padding: 20px;
+    position: absolute;
+    left: -30px;
+    right: 80px;
+    bottom: 0px;
+    box-shadow: none;
+    border-radius: 5px;
+    padding: 30px;
   }
 }
 
