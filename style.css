@@ -1,3 +1,11 @@
+.profile .arrow, .profile .shareb {
+  position: absolute;
+  z-index: 2;
+  box-shadow: 10px 10px 5px #ecf2f8;
+  background: #48556a;
+  margin: 0;
+}
+
 body {
   background: #ecf2f8;
   padding: 150px;
@@ -62,6 +70,10 @@ body {
   bottom: 22px;
 }
 
+.profile {
+  position: relative;
+  z-index: 1;
+}
 .profile button {
   width: 30px;
   height: 30px;
@@ -72,5 +84,38 @@ body {
   bottom: 30px;
   background: #ecf2f8;
 }
+.profile button :hover {
+  cursor: pointer;
+}
+.profile .shareb {
+  visibility: hidden;
+  bottom: 90px;
+  left: 220px;
+  box-sizing: border-box;
+  height: 60px;
+  width: 260px;
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+.profile .shareb span {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #b0bac4;
+  margin-right: 10px;
+}
+.profile .shareb img {
+  margin: 0 7px;
+}
+.profile .arrow {
+  visibility: hidden;
+  bottom: 75px;
+  left: 360px;
+  width: 0;
+  height: 0;
+  border-right: 10px solid white;
+  border-left: 10px solid white;
+  border-top: 15px solid #48556a;
+}
+
 
 /*# sourceMappingURL=style.css.map */
