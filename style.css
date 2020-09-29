@@ -75,6 +75,8 @@ body {
 .profile {
   position: relative;
   z-index: 1;
+  /*the box where the social media buttons is */
+  /* the arrow beneath it*/
 }
 .profile button {
   width: 30px;
@@ -119,6 +121,7 @@ body {
   border-top: 15px solid #48556a;
 }
 
+/*Mobile View*/
 @media screen and (max-width: 480px) {
   body {
     margin: 0;
@@ -159,6 +162,69 @@ body {
     box-shadow: none;
     border-radius: 5px;
     padding: 30px;
+  }
+}
+/*tablet view*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    padding: 100px 70px;
+    margin: 0;
+  }
+
+  .preview {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    height: 650px;
+    width: 300px;
+  }
+
+  .profile button {
+    position: relative;
+    left: 120px;
+  }
+  .profile .shareb {
+    position: absolute;
+    left: 100px;
+    z-index: 2;
+  }
+  .profile .arrow {
+    position: absolute;
+    left: 200px;
+    z-index: 2;
+  }
+}
+/* 1024 px desktop view*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    padding: 100px;
+    margin: 0;
+  }
+
+  .preview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 400px;
+  }
+
+  .picture img {
+    height: 400px;
+  }
+
+  .profile button {
+    position: relative;
+    left: 130px;
+  }
+  .profile .shareb {
+    position: absolute;
+    z-index: 2;
+    left: 90px;
+  }
+  .profile .arrow {
+    position: absolute;
+    z-index: 2;
+    left: 210px;
   }
 }
 
