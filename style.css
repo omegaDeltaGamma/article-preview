@@ -9,9 +9,11 @@
 body {
   background: #ecf2f8;
   padding: 150px;
-  padding-left: 250px;
   font-size: 13px;
   font-family: "Manrope", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .preview {
@@ -120,21 +122,19 @@ body {
 @media screen and (max-width: 480px) {
   body {
     margin: 0;
-    padding: 100px 20px;
-    padding-left: 20px;
-    padding-right: 0px;
+    padding: 100px;
   }
 
   .preview {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
-    height: 600px;
-    width: 430px;
+    height: 650px;
+    width: 300px;
   }
 
   .picture img {
-    width: 430px;
+    width: 300px;
   }
 
   .profile button {
@@ -149,7 +149,7 @@ body {
 
   .profile .shareb {
     box-sizing: border-box;
-    width: 430px;
+    width: 300px;
     height: 80px;
     padding: 20px;
     position: absolute;
